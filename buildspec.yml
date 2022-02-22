@@ -7,10 +7,12 @@ phases:
       - echo Getting Started
   pre_build:
     commands:
-      - echo Installing some packages and source NPM dependencies...
-      - npm install
+    - echo "Nothing run"
+     
   build:
     commands:
+      - echo Installing some packages and source NPM dependencies...
+      - npm install
       - echo Build started on `date`
       - echo Run all of your build related code if any
       - echo Build finished, now moving to S3
