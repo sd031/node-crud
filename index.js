@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 //database connection
 const mongoose =require('mongoose');
-mongoose.connect('mongodb://localhost:27017/userTestDB',{useNewUrlParser: true,useUnifiedTopology:true});
+mongoose.connect('mongodb://localhost:777/userTestDB',{useNewUrlParser: true,useUnifiedTopology:true});
 const db=mongoose.connection;
 
 db.on("error",(err)=>{
@@ -20,8 +20,9 @@ db.once("open",()=>{
 });
 
 // Server 
-app.listen(3000,()=>{
-    console.log("Server is Running on port 3000");
+const port = process.env.NODE_PORT || 3000;
+app.listen(port,()=>{
+    console.log(`Server is Running on port ${port}`);
 });
 
 //use routers
