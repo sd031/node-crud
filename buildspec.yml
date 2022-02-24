@@ -2,18 +2,17 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 10
+      nodejs: 14
     commands:
       - echo Installing
   pre_build:
     commands:
-      - echo Installing source NPM dependencies.
-      - npm install
+      - echo Going to Start the Build.
   build:
     commands:
       - echo Build started on `date`
-      - echo Compiling the Node.js code
-      - npm run build
+      - echo Installing source NPM dependencies.
+      - npm install
   post_build:
     commands:
       - echo Build completed on `date`
