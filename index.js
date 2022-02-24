@@ -27,7 +27,7 @@ app.listen(port,()=>{
 
 //use routers
 app.get("/_status",function(req,res){
-    return res.status(200).json({"status" : "ok"});
+    return res.status(200).json({"status" : "Hi"});
     });
 
 app.get("/",function(req,res){
