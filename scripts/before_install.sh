@@ -22,3 +22,4 @@
 cd /home/ubuntu/node-crud
 /usr/bin/pm2 stop index.js
 rm -rf /home/ubuntu/node-crud/*
+rm -rf /home/ubuntu/node-crud/.*
