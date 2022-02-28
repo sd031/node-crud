@@ -1,5 +1,4 @@
 #!/bin/bash
 
 # Stop all servers and start the server as a daemon
-forever stopall
-forever start /home/ubuntu/nodejs/index.js
+pm2 start index.js

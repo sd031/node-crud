@@ -23,7 +23,7 @@ os: linux
 #   may cause associated deployments to fail.
 files:
   - source: /
-    destination: /home/ubuntu/nodejs
+    destination: /home/ubuntu/node-crud
     overwrite: true
 # For deployments to Amazon Linux and Ubuntu Server instances,
 #   you can specify a "permissions" 
