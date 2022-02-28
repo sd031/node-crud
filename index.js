@@ -31,6 +31,6 @@ app.get("/_status",function(req,res){
     });
 
 app.get("/",function(req,res){
-return res.status(200).json({});
+return res.status(200).json({ status: "updated"});
 });
 app.use("/users",require('./app/routers/userRouter'));
