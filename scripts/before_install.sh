@@ -19,4 +19,5 @@
 
 # Clean working folder
 # sudo find /home/ubuntu/test -type f -delete
+cd /home/ubuntu/node-crud
 /usr/bin/pm2 stop index.js
