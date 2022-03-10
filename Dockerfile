@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:16.13.0
+FROM node:16.13.0
 ENV NODE_ENV=production
 
 WORKDIR /node_app
