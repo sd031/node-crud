@@ -6,7 +6,8 @@ app.use(bodyParser.json());
 
 //database connection
 const mongoose =require('mongoose');
-mongoose.connect('mongodb://localhost:777/userTestDB',{useNewUrlParser: true,useUnifiedTopology:true});
+const mongoDBUrl = process.env.mongoDBUrl || "mongodb://localhost:777/userTestDB";
+mongoose.connect(mongoDBUrl,{useNewUrlParser: true,useUnifiedTopology:true});
 const db=mongoose.connection;
 
 db.on("error",(err)=>{
